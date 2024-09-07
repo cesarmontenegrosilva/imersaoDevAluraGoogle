@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma   
+ de Doação de Alimentos</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+    <header>   
+
+        <h1>Plataforma para a Doação de Alimentos</h1>
+        <p>Conectando doadores de alimentos com pessoas e instituições que mais precisam. 
+            Nossa missão é reduzir o desperdício e combater a insegurança alimentar nas comunidades 
+            da região metropolitana do Recife.</p>
+    </header>
+    
+    <section id="cadastro-doador">
+        <h2>Cadastro de Doador</h2>
+        <form id="form-doador">
+            <label for="nome">Nome (Pessoa/Estabelecimento):</label>
+            <input type="text" id="nome" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" required>
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" required>
+
+            <label   
+ for="tipo-alimento">Tipo de Alimento:</label>
+            <input type="text" id="tipo-alimento" required>
+
+            <label for="horario">Horário disponível para a doação:</label>
+            <input type="text" id="horario" required>
+
+            <label for="latitude">Latitude:</label>
+            <input type="number" step="any" id="latitude" required>
+
+            <label for="longitude">Longitude:</label>
+            <input type="number" step="any" id="longitude" required>
+
+            <button type="submit">Cadastrar Doador</button>
+        </form>
+    </section>
+
+    <section id="buscar-doacoes">
+        <h2>Buscar locais de doações mais próximos à sua residência</h2>
+        <form id="form-busca">
+            <label for="cep">CEP (Recife, Olinda e Jaboatão):</label>
+            <input type="text" id="cep" placeholder="Digite seu CEP" required>
+            <button type="submit">Buscar locais de doações</button>
+        </form>
+
+        <div id="resultado-busca">
+            <h3>Locais mais próximos à sua residência:</h3>
+            <ul id="lista-locais"></ul>
+        </div>
+    </section>
+
+    <section id="mapa-doacoes">
+        <h2>Mapa de locais para buscar a sua doação</h2>
+        <div id="map" style="height: 500px;"></div>
+    </section>
+
+    <footer>
+        <p>Todos os direitos reservados. Desenvolvido por César Negro.</p>
+        <p>Contato: cesarmontenegrosilva@gmail.com / augustomontenegrosilva@gmail.com</p>
+        <p>Tel: 81 997675772</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

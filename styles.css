@@ -1,0 +1,149 @@
+/* Definições básicas de layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2E2E2E; /* Fundo escuro */
+    color: #E0E0E0; /* Texto claro */
+}
+
+/* Estilização do cabeçalho */
+header {
+    background-color: #1B1B1B; /* Fundo do header ainda mais escuro */
+    color: #FFFFFF; /* Texto branco */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #B0B0B0; /* Texto descritivo mais claro */
+}
+
+/* Seções da página */
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #333333; /* Cor de fundo mais escura para as seções */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra leve */
+}
+
+/* Títulos das seções */
+h2 {
+    color: #FFFFFF;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+/* Estilização dos formulários */
+form {
+    margin: 20px 0;
+}
+
+label {
+    font-size: 1rem;
+    color: #E0E0E0; /* Cor do texto dos labels */
+}
+
+input, button {
+    display: block;
+    margin: 10px 0;
+    padding: 12px;
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Campos de input */
+input {
+    background-color: #444444; /* Fundo mais escuro nos campos de texto */
+    color: #FFFFFF; /* Texto branco */
+    border: 1px solid #555555; /* Borda sutil */
+}
+
+/* Foco nos inputs */
+input:focus {
+    outline: none;
+    border-color: #888888;
+    box-shadow: 0 0 5px rgba(136, 136, 136, 0.5);
+}
+
+/* Botões */
+button {
+    background-color: #1B5E20; /* Verde escuro */
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover no botão */
+button:hover {
+    background-color: #2E7D32; /* Verde um pouco mais claro no hover */
+}
+
+/* Estilo da lista de locais */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #444444; /* Cor de fundo dos itens da lista */
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: #E0E0E0;
+}
+
+/* Mapa */
+#map {
+    height: 500px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid #555555; /* Borda sutil ao redor do mapa */
+}
+
+/* Links e atribuições */
+a {
+    color: #81C784; /* Verde claro para links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #66BB6A; /* Verde mais escuro no hover */
+}
+
+/* Footer */
+footer {
+    background-color: #1B1B1B; /* Cor de fundo escura, igual ao header */
+    color: #B0B0B0; /* Cor de texto mais clara, igual ao texto descritivo do header */
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: relative; /* Mantém o posicionamento relativo */
+    bottom: 0; /* Garante que fique na parte inferior */
+}
+
+footer p {
+    margin: 5px 0; /* Espaçamento entre os parágrafos */
+}
+
+footer a {
+    color: #81C784; /* Cor dos links, igual ao restante do site */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #66BB6A; /* Cor dos links no hover, igual ao restante do site */
+}
