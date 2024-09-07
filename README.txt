@@ -1,5 +1,7 @@
 Plataforma de Doação de Alimentos
 
+site: https://doacao-alimentos-met-rec.netlify.app/
+
 Descrição
 
 A Plataforma de Doação de Alimentos tem como objetivo conectar doadores de alimentos (pessoas ou estabelecimentos) com famílias e instituições que precisam. A aplicação visa reduzir o desperdício de alimentos e combater a insegurança alimentar nas comunidades.
